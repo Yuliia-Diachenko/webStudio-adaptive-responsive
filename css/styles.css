@@ -48,19 +48,20 @@ p {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
-  .container {
-    max-width: 288px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 
-}
-    /* ================================  HEDER STYLE  ================================================ */
+    /* ================================  MOBILE HEDER STYLE  ================================================ */
+
+@media screen and (max-width: 767px) {
+ .container {
+     max-width: 767px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;}
+
 .menu, .address{
-    display: none;
-}
+        display: none;
+    }
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -80,6 +81,7 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;  
 }
+
 .mobile-menu-open-btn {
     border: none;
     background-color: transparent;
@@ -88,11 +90,420 @@ p {
     line-height: 0;
   
 
-}
-  /* ================================  /HEDER STYLE  ================================================ */
-  /* ================================= MOBILE MENU WRAPER ========================================== */
+}}
+    /* ================================    /MOBILE HEDER STYLE    ================================================ */  
+ 
 
-.mobile-menu-wraper-container {
+     /* ==============================  TABLET HEDER STYLE  ================================================ */
+     @media screen and (min-width: 768px) {
+
+        .container {
+            max-width: 1167px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+       .mobile-menu-open-btn {
+        display: none;
+       }
+     .header {
+        border-bottom: 1px solid #e7e9fc;  
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
+    
+      
+    }
+    
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-conteiner {
+        margin-right: 76px;
+    }
+    .logo {
+        color: #4D5AE5;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.17; /* 116.667% */
+        letter-spacing: 0.03em;
+        text-transform: uppercase;  
+    }
+    .menu {
+        display: flex;
+        gap: 40px;
+    }
+    .studio {
+        color: #2E2F42; 
+       }
+    .header-link {
+        color: #2E2F42;
+        font-weight: 500;
+        padding: 24px 0; 
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    
+    .header-link:last-child {
+        margin: 0;
+    
+    }
+   
+    .current {
+    position: relative;
+    color: #404BBF;
+    }
+    .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    } 
+    
+    .address {
+        font-style: normal;
+        display: flex;
+        gap: 40px;
+    }
+    .adress-menu {
+        display: flex;
+        gap: 12px;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .address-contact {
+        color: #434455;
+        transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           
+    }
+    
+     /* ================================  /TABLET HEDER STYLE  ================================================ */
+}
+
+@media screen and (min-width:  1158px)  {
+    .container {
+        max-width: 1440px;
+    }
+
+    /* ================================  DESKTOP HEDER STYLE  ================================================ */ 
+
+    .header {
+        border-bottom: 1px solid #e7e9fc;  
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);     
+      
+    }
+    
+    .header-container {
+        max-width: 1122px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-conteiner {
+        margin-right: 76px;
+    }
+    .logo {
+        color: #4D5AE5;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.17; /* 116.667% */
+        letter-spacing: 0.03em;
+        text-transform: uppercase;  
+    }
+    .menu {
+        display: flex;
+        gap: 40px;
+    }
+    .studio {
+        color: #2E2F42; 
+       }
+    .header-link {
+        color: #2E2F42;
+        font-weight: 500;
+        padding: 24px 0; 
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    
+    .header-link:last-child {
+        margin: 0;
+    
+    }
+    .header-link:hover,
+    .header-link:focus,
+    .header-link:active  {
+        color: #404BBF;
+    }
+    
+    .current {
+    position: relative;
+    color: #404BBF;
+    }
+    .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    } 
+    
+    .address {
+        font-style: normal;
+        display: flex;
+        gap: 40px;
+    }
+    .adress-menu {
+        display: flex;
+        gap: 40px;
+        justify-content: flex-end;
+        flex-direction: row;
+        padding: 24px 0 24px 0;
+    }
+    .address-contact {
+        color: #434455;
+        transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           
+    }
+    .address-contact:hover {
+        color: #404BBF;
+     }
+     .address-contact:focus {
+        color: #404BBF;
+     }
+   
+     /* ================================  /DESKTOP HEDER STYLE  ================================================ */
+}
+
+/* ==========================================  MOBILE HERO SECTION  ======================================== */
+@media screen and (max-width: 767px) {
+
+    .hero-section {
+   
+        padding: 188px 0;
+        background-image: 
+        linear-gradient(
+        to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/adaptiv_imeges/Dark-bg_m.jpg);    
+        background-size: cover;
+        max-width: 767px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        
+    }
+    @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px)  {
+        .hero-section {
+          background-image: linear-gradient(
+            to bottom, 
+            rgba(46, 47, 66, 0.7), 
+            rgba(46, 47, 66, 0.7)), url("../images/adaptiv_imeges/Dark-bg@2x_m.jpg");
+        }
+      }
+    .hero-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+        
+    }
+    .hero-title {
+        color: #FFF;
+        text-align: center;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        margin-bottom: 48px;
+        max-width: 496px;  
+       
+    }
+    .hero-button {
+        color: #FFF;   
+        background-color: #4D5AE5;
+        border-radius: 4px;    
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);         
+    }  
+
+
+}
+
+/* ==========================================  /MOBILE HERO SECTION  ======================================== */
+
+/* ==========================================  TABLET HERO SECTION   ========================================== */
+@media screen and (min-width: 768px) {
+
+
+.hero-section {
+   
+    padding: 188px 0;
+    background-image: 
+    linear-gradient(
+    to bottom, 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+    url(../images/adaptiv_imeges/Dark-bg_tbt.jpg);    
+    background-size: cover;
+    max-width: 1439px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    
+}
+@media screen and (min-resolution: 192dpi) and (max-width: 1157px),
+screen and (min-resolution: 2dppx) and (max-width: 1157px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 1157px)  {
+    .hero-section {
+      background-image: linear-gradient(
+        to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), url("../images/adaptiv_imeges/Dark-bg_tbt@2x.jpg");
+    }
+  }
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+.hero-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    max-width: 496px;  
+   
+}
+.hero-button {
+    color: #FFF;   
+    background-color: #4D5AE5;
+    border-radius: 4px;    
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);         
+}  
+
+}
+
+/* =============================================      /TABLET HERO SECTION    ======================= */
+/* =============================================      DESKTOP TABLET HERO SECTION    ======================= */
+@media screen and (min-width:  1158px)  {
+
+.hero-section {
+   
+    padding: 188px 0;
+    background-image: 
+    linear-gradient(
+	to bottom, 
+	rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+    url(../images/People_office.jpg);
+    background-size: cover;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+.hero-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    max-width: 496px;  
+   
+}
+.hero-button {
+    color: #FFF;   
+    background-color: #4D5AE5;
+    border-radius: 4px;    
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+
+.hero-button:hover, 
+.hero-button:focus {    
+    background-color: #404BBF;
+}
+
+}
+/* =============================================      /DESKTOP HERO SECTION    ======================= */
+
+ /* ================================= MOBILE MENU WRAPER ========================================== */
+
+ .mobile-menu-wraper-container {
     position: absolute;
 
 }
@@ -100,7 +511,7 @@ p {
 .mobile-menu-wraper-btn-close {
     position: absolute;
     top: 24px; 
-    right: 24px;
+    right: -50px;
     width: 24px;
     height: 24px; 
     border-radius: 50%;
@@ -111,7 +522,8 @@ p {
     border: 1px solid rgba(0, 0, 0, 0.1); 
     padding: 0; 
     cursor: pointer; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);     
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
     
 }
 
@@ -240,23 +652,3 @@ color: #2E2F42;
 
 
   /* ================================= /MOBILE MENU WRAPER ========================================== */
-@media screen and (min-wight: 768px) {
-    .container {
-        max-width: 768px;
-    }
-   
-
-     /* ================================  HEDER STYLE  ================================================ */
-     
-     /* ================================  /HEDER STYLE  ================================================ */
-}
-
-@media screen and (min-wight: 1158px) {
-    .container {
-        max-width: 158px;
-    }
-
-    /* ================================  HEDER STYLE  ================================================ */ 
-   
-     /* ================================  HEDER STYLE  ================================================ */
-}

@@ -345,9 +345,7 @@ background-color: #404BBF;
     background-color: #404bbf;
     
 }
-.social-links-icons {
-    fill:  #f4f4fd;
-}
+
 
 .container-social-links  {
     justify-content: center;
@@ -364,6 +362,7 @@ background-color: #404BBF;
     align-items: center; 
     justify-content: center;
     background-color: #F4F4FD;
+    fill:  #f4f4fd;
     
 }
 /* ==========================section fourth================================= */
