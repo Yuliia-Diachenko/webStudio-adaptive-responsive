@@ -699,7 +699,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
     /* ======================================  MOBILE OUR TEAM SECTION   ===================================== */
     @media screen and (max-width: 767px) {
         .our-team {
-            background-color: #F4F4FD;        
+            background-color: #F4F4FD; 
+            padding-bottom: 96px;       
            
         }
   
@@ -811,6 +812,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         .our-team {
             background-color: #F4F4FD;            
            margin: 0 auto;
+           padding-bottom: 96px;
+           
         
         }
     
@@ -922,12 +925,13 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
 
         .our-team {
             background-color: #F4F4FD; 
+            padding-bottom: 120px;
            
         
         }
         .our-team-container {
             margin: 0 auto;
-            padding-bottom: 120px;
+            
         }
         .our-team-title {
             color: #2E2F42;
@@ -988,6 +992,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
             align-items: center;      
         
         }
+    
         .list-social-icons {
             width: 40px;
             height: 40px;
@@ -1031,10 +1036,45 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
             
         }
     }
-    /* ======================================  DESKTOP OUR TEAM SECTION   ===================================== */
+    /* ======================================  /DESKTOP OUR TEAM SECTION   ===================================== */
+
+/* ======================================  MOBILE OUR PORTFOLIO SECTION   ===================================== */
+@media screen and (max-width: 767px) {
 
 
- /* =================================    MOBILE MENU WRAPER    ========================================== */
+
+
+
+
+}
+/* ======================================  /MOBILE OUR PORTFOLIO SECTION   ===================================== */
+
+/* ======================================  TABLET OUR PORTFOLIO SECTION   ===================================== */
+@media screen and (min-width: 768px) {
+
+
+
+
+
+    
+}
+
+/* ======================================  /TABLET OUR PORTFOLIO SECTION   ===================================== */
+
+/* ======================================  DESKTOP OUR PORTFOLIO SECTION   ===================================== */
+@media screen and (max-width: 767px) { 
+
+
+
+
+
+
+}
+
+/* ======================================  /DESKTOP OUR PORTFOLIO SECTION   ===================================== */
+
+
+ /* ==========================================    MOBILE MENU WRAPER    ========================================== */
 
  .mobile-menu-wraper-container {
     position: absolute;
