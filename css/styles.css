@@ -317,6 +317,7 @@ p {
         background-repeat: no-repeat;
         background-position: center;
         margin: 0 auto;
+        margin-bottom: 96px;
         
     }
     @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -383,15 +384,16 @@ p {
     rgba(46, 47, 66, 0.7)),
     url(../images/adaptiv_imeges/Dark-bg_tbt.jpg);    
     background-size: cover;
-    max-width: 1439px;
+    max-width: 1157px;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    margin-bottom: 96px;
     
 }
-@media screen and (min-resolution: 192dpi) and (max-width: 1157px),
-screen and (min-resolution: 2dppx) and (max-width: 1157px),
-screen and (min-device-pixel-ratio: 2) and (max-width: 1157px)  {
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px)  {
     .hero-section {
       background-image: linear-gradient(
         to bottom, 
@@ -437,7 +439,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 1157px)  {
 }
 
 /* =============================================      /TABLET HERO SECTION    ======================= */
-/* =============================================      DESKTOP TABLET HERO SECTION    ======================= */
+/* =============================================      DESKTOP HERO SECTION    ======================= */
 @media screen and (min-width:  1158px)  {
 
 .hero-section {
@@ -453,9 +455,19 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 1157px)  {
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
+    margin: 0 auto 120px auto;
     
 }
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
+    .hero-section {
+      background-image: linear-gradient(
+        to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), url("../images/adaptiv_imeges/people-office_dskt@2x.jpg");
+    }
+  }
 
 .hero-container {
     display: flex;
@@ -499,9 +511,193 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 1157px)  {
 }
 
 }
-/* =============================================      /DESKTOP HERO SECTION    ======================= */
+/* =============================================      /DESKTOP HERO SECTION    ================================== */
+  /* ==========================================   MOBILE SPECIFICS SECTION   =====================================*/
+ 
+  
+  @media screen and (max-width: 767px) {
+ 
+    .specifics {
+   max-width: 735px; 
+   margin-bottom: 96px;
+       
+}
 
- /* ================================= MOBILE MENU WRAPER ========================================== */
+.specifics-title {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;   
+    line-height: 1.1em;
+    margin-bottom: 8px;
+    text-align: center;
+       
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .specifics-icons {
+    display: none; 
+    
+    
+  }
+.specifics-menu {
+    display: flex; 
+    gap: 72px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 737px;
+  }
+.specifics-list {
+    
+    max-width: 400px;
+
+  }
+ 
+.specifics-explanation {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    
+}
+}
+ /* ==================================   /MOBILE SPECIFICS SECTION   =====================================*/
+  /* ==================================   TABLET SPECIFICS SECTION   =====================================*/
+
+  @media screen and (min-width: 768px) {
+
+
+  .specifics {
+    
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px; 
+    margin-bottom: 96px;
+       
+}
+
+.specifics-title {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;   
+    line-height: 1.1em;
+    margin-bottom: 8px;
+  
+       
+}
+
+.specifics-icons {
+    display: none; 
+  
+    
+  }
+.specifics-menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px; 
+    justify-content: center;
+   
+  }
+.specifics-list {
+
+    width: calc((100% - 72px)/2);
+    
+
+  }
+  .specifics-title {
+    margin-bottom: 8px;
+  }
+  .specifics-explanation {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    
+} 
+}
+
+   /* ==================================   /TABLET SPECIFICS SECTION   =====================================*/
+    /* ==================================   DESKTOP SPECIFICS SECTION   =====================================*/
+
+    @media screen and (min-width:  1158px)  {
+
+    .specifics {
+        color: #2E2F42;      
+       
+           
+    }
+    .specifics-container {
+        margin: 0 auto;
+    }
+    
+    .specifics-title {
+        color: #2E2F42;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+           
+    }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+      .specifics-icons {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        height: 112px; 
+        background-color: #f4f4fd; 
+        border-radius: 4px;
+        margin-bottom: 8px;
+        border: 1px solid  #8E8F99;
+        
+      }
+    .specifics-menu {
+        display: flex; 
+        gap: 24px;
+       
+      }
+    .specifics-list {
+        width: calc((100% - 72px)/4);
+    
+      }
+    
+    .specifics-explanation {
+        color: #434455;
+        font-size: 16px;
+        line-height: 1.5em;
+        letter-spacing: 0.02em;
+        
+    }
+}
+    /* ==================================   /DESKTOP SPECIFICS SECTION   =====================================*/
+
+ /* =================================    MOBILE MENU WRAPER    ========================================== */
 
  .mobile-menu-wraper-container {
     position: absolute;

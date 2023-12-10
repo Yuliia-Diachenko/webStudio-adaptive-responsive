@@ -215,7 +215,9 @@ background-color: #404BBF;
     color: #2E2F42;
        
 }
-
+.section {
+    margin: 0 auto;
+}
 .specifics-title {
     font-size: 20px;
     font-weight: 500;
@@ -253,6 +255,7 @@ background-color: #404BBF;
   }
 .specifics-list {
     width: calc((100% - 72px)/4);
+ 
 
   }
   .specifics-title {
