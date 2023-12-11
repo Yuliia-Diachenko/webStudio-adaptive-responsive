@@ -725,11 +725,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         
         .our-team-block {
             background-color: #FFF;
-            width: calc((100% - 72px)/1);
+            
             border-radius: 0px 0px 4px 4px;
             box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);      
-            margin: 0 auto 72px auto;
+           
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -959,9 +959,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
             width: calc((100% - 72px)/4);
             border-radius: 0px 0px 4px 4px;
             box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-            width: auto;
-            
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);         
             
           
         }
@@ -1044,7 +1042,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
 
     .our-portfolio {
         color: #2E2F42;
-        background-color: #FFFFFF;       
+        background-color: #FFFFFF; 
+              
            
     
          
@@ -1061,15 +1060,16 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         margin-top: 96px;   
     }
     .our-portfolio-menu {
-        display: flex;
-        flex-wrap: nowrap;
+        display: flex;        
         flex-direction: column;
         align-items: center;       
         row-gap: 48px; 
         max-width: 360px;
-        margin: 0 auto;
+        margin: 0 auto ;
+        margin-bottom: 96px;
        
     }
+   
     .our-portfolio-list {
         margin-left: 0px;
         width: calc((100% - 48px)/1);
@@ -1080,7 +1080,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
     .our-portfolio-list:hover {
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
         
-    
     }
     .our-portfolio-img {
         position: relative;
@@ -1140,7 +1139,102 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
 
 /* ======================================  TABLET OUR PORTFOLIO SECTION   ===================================== */
 @media screen and (min-width: 768px) {
+    .our-portfolio {
+        color: #2E2F42;
+        background-color: #FFFFFF;
+       
+    }
+    .container-our-portfolio {
+display: inline;
+justify-content: center;
 
+    }
+    .our-portfolio-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11; 
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 72px; 
+        margin-top: 96px;   
+    }
+    .our-portfolio-menu {
+        display: flex;
+        flex-wrap: wrap; 
+        column-gap: 24px;     
+        row-gap: 48px;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 96px;   
+
+    }
+    .our-portfolio-list {
+        margin-left: 0px;
+        width: calc((100% - 48px)/2);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        max-width: 380px;
+        
+        
+    
+    }
+    .our-portfolio-list:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+        
+    
+    }
+    .our-portfolio-img {
+        position: relative;
+        overflow: hidden; 
+        
+        
+    }
+    .our-portfolio-top {
+        position: absolute; 
+        top: 0;
+        font-size: 16px;
+        line-height: 1.5; 
+        letter-spacing: 0.02em; 
+        color: #f4f4fd;
+        padding: 40px 32px;
+        background-color: #4d5ae5;
+        height: 100%;
+        width: 100%;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+    
+    }
+    .our-portfolio-list:hover .our-portfolio-top,
+    .our-portfolio-list:focus .our-portfolio-top {
+    
+        transform: translateY(0%);
+    
+    }
+    .our-portfolio-container {
+        padding: 32px 16px;
+        border: 1px solid #e7e9fc;
+        border-top: none; 
+        margin: 0 auto;
+        
+    }
+    .our-portfolio-item {
+        color: #2E2F42;
+        font-size: 20px;
+        line-height: 1.2;   
+        font-weight: 500;    
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        
+    }
+    .our-portfolio-product {
+        color: #434455;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        
+       
+    }
 
 
 
@@ -1151,15 +1245,35 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
 /* ======================================  /TABLET OUR PORTFOLIO SECTION   ===================================== */
 
 /* ======================================  DESKTOP OUR PORTFOLIO SECTION   ===================================== */
-@media screen and (max-width: 767px) { 
-
-
-
-
-
-
+@media screen and (min-width: 1158px) { 
+    
+    .container-our-portfolio {
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+        margin: 0 auto;
+        
+    }
+ 
+    
+ 
+    .our-portfolio-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 24px;
+        row-gap: 48px; 
+    }
+    .our-portfolio-list {
+        margin-left: 0px;
+        width: calc((100% - 48px)/3);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        max-width: 360px; 
+    
+    }
+ 
+    
 }
-
 /* ======================================  /DESKTOP OUR PORTFOLIO SECTION   ===================================== */
 
 
