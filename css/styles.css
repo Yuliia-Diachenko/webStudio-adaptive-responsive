@@ -1278,34 +1278,111 @@ justify-content: center;
 /* ======================================  /DESKTOP OUR PORTFOLIO SECTION   ===================================== */
 /* ======================================  /DESKTOP OUR PORTFOLIO SECTION   ===================================== */
 /* ================================================  MOBILE FOOTER  =============================================== */
-@media screen and (max-width: 767px) {
-    .footer {
-        background-color: #2E2F42;
-        display: flex;
+.footer {
+    background-color: #2E2F42;
+    display: flex;
+    margin: 0 auto;
+
+}
+.footer-container {
+    padding: 98px 0;
+}
+.logo-web {
+    color: #4D5AE5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    display: inline-block; 
+    margin-bottom: 16px;     
+}
+.logo-footer {
+    color: #F4F4FD;  
+}
+.footer-text {
+    color: #F4F4FD;
     
-    }
+    
+}
+.social-media {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    
+}
+.footer-form-button {
+    width: 162px;
+    height: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row-reverse;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    
+}
+.footer-form-button-icon {
+    margin-left: 16px;
+    fill: #FFF;
+
+}
+.footer-form-label {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    
+   }
+
+.footer-form-input {
+    width: 288px; 
+    height: 40px; 
+    border: 1px solid #ffffff; 
+    background-color: transparent;
+    font-size: 12px; 
+    line-height: 1.5; 
+    letter-spacing: 0.04em;
+    padding-left: 16px; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+    border-radius: 4px;
+    color: #ffffff; 
+
+}
+input::placeholder {
+    color: #ffffff; 
+}
+.footer-text-form {
+    margin-bottom: 16px; 
+    font-weight: 500; 
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
+    color: #ffffff; 
+    
+
+}
+@media screen and (max-width: 767px) {
+ 
     .footer-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 98px 0;
+        
     }
-    .logo-web {
-        color: #4D5AE5;
-        font-family: "Raleway", sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17; /* 116.667% */
-        letter-spacing: 0.03em;
-        text-transform: uppercase; 
-        display: inline-block; 
-        margin-bottom: 16px;     
-    }
-    .logo-footer {
-        color: #F4F4FD;  
-    }
+  
     .footer-text {
-        color: #F4F4FD;
         max-width: 264px;      
         
     }
@@ -1322,15 +1399,7 @@ justify-content: center;
         align-items: center;
         padding-bottom: 72px;
     }
-    .social-media {
-        color: #FFF;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        margin-bottom: 16px;
-        
-    }
+  
     /* --    footer form  ---  */
     .footer-form-cotainer {
         display: flex;
@@ -1339,16 +1408,7 @@ justify-content: center;
         
        
     }
-    .footer-text-form {
-        margin-bottom: 16px; 
-        font-weight: 500; 
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em; 
-        color: #ffffff; 
-        
-    
-    }
+   
     .footer-form {
         display: flex;
         flex-direction: column;
@@ -1358,66 +1418,89 @@ justify-content: center;
     }
     .footer-form-input {
         width: 288px; 
-        height: 40px; 
-        border: 1px solid #ffffff; 
-        background-color: transparent;
-        font-size: 12px; 
-        line-height: 1.5; 
-        letter-spacing: 0.04em;
-        padding-left: 16px; 
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
-        border-radius: 4px;
-        color: #ffffff; 
+     
     
     }
-    input::placeholder {
-        color: #ffffff; 
-    }
+   
     .footer-form-button {
         width: 162px;
-        height: 40px;
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        flex-direction: row-reverse;
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #ffffff;
-        cursor: pointer;
-        background-color: #4D5AE5;
-        border: none;
-        border-radius: 4px;
+    
         
     }
-    .footer-form-button-icon {
-        margin-left: 16px;
-        fill: #FFF;
-    
-    }
-    .footer-form-label {
-     display: flex;
-     flex-direction: row;
-     gap: 24px;
-     
-    }
-
+   
+ 
 }
 
 
 /* ================================================  /MOBILE FOOTER  =============================================== */
 /* ================================================  TABLET FOOTER  =============================================== */
 @media screen and (min-width: 768px) {
+    .footer-container {
+        margin: 0 auto;
+        
+       
+    }
+    .footer-container-logo-text-social-links {
+        display: inline-flex;
+        margin: 0 auto;
+        max-width: 496px;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 72px;
 
+    }
+    .footer-form-cotainer {
+        display: block;
+        
+    }
+   
+    .footer-form {
+        display: flex;
+        gap: 24px;
+        
+    }
+    .footer-form-input {
+        width: 264px; 
     
+    
+    }
+  
+    .footer-form-button {
+        min-width: 165px;
+        
+        
+    }
+  
 }
 
 /* ================================================  /TABLET FOOTER  =============================================== */
 /* ================================================  DESKTOP FOOTER  =============================================== */
    @media screen and (min-width: 1158px) { 
+ 
 
+
+   .footer-container-logo-text-social-links {
+        min-width: 584px;
+        justify-content: flex-start;
+
+   }
+    .footer-container {
+        display: flex;
+     
+           
+    }
+    .footer-container-logo-text {
+        max-width: 264px;
+       
+    }
+    .footer-container-logo-text-social-links {
+      
+        margin: 0 auto;
+       max-width: 1288px;
+       padding: 0 16px;
+
+    }
+   
 
    }
 /* ================================================  /DESKTOP FOOTER  =============================================== */
