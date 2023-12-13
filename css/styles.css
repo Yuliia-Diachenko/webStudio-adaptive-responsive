@@ -1530,9 +1530,13 @@ input::placeholder {
     padding: 72px 24px 24px 24px;    
 
 }
+.modal-window-container.is-open {
+    transform: translateX(0%);
+    transition: 250ms;
+}
 
 .modal-window-button {
-    position: absolute;
+    position: fixed;
     top: 24px; 
     right: 24px;
     width: 24px;
@@ -1713,6 +1717,9 @@ input:checked +.form-label-checkbox > .form-label-span {
 
 
  /* ==========================================    MOBILE MENU WRAPER    ========================================== */
+ @media screen and (max-width: 767px) {
+
+    
 
  .mobile-menu-wraper-container {
     position: absolute;
@@ -1722,7 +1729,7 @@ input:checked +.form-label-checkbox > .form-label-span {
 .mobile-menu-wraper-btn-close {
     position: absolute;
     top: 24px; 
-    right: -50px;
+    right: 24px;
     width: 24px;
     height: 24px; 
     border-radius: 50%;
@@ -1859,7 +1866,7 @@ color: #2E2F42;
 .social-links-icons {
     fill:  #f4f4fd;
 }
-
+}
 
 
   /* ================================= /MOBILE MENU WRAPER ========================================== */
