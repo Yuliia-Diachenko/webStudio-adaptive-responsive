@@ -1702,8 +1702,6 @@ input:checked +.form-label-checkbox > .form-label-span {
     
     }
    
-
-
 }
 /* ==========================================    /MOBILE MODAL WINDOW    ========================================== */
 
@@ -1724,7 +1722,7 @@ input:checked +.form-label-checkbox > .form-label-span {
 .mobile-menu-wraper-btn-close {
     position: absolute;
     top: 24px; 
-    right: 24px;
+    right: -50px;
     width: 24px;
     height: 24px; 
     border-radius: 50%;
@@ -1736,7 +1734,8 @@ input:checked +.form-label-checkbox > .form-label-span {
     padding: 0; 
     cursor: pointer; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-        
+    
+    
 }
 
 .mobile-menu-wraper-btn-close-icon {
@@ -1752,14 +1751,13 @@ input:checked +.form-label-checkbox > .form-label-span {
     z-index: 9999999999;
     background-color: #fff;
     transform: translateX(100%);
-    padding: 72px 40px 40px 16px;
 }
 .mobile-menu-wraper.is-open {
     transform: translateX(0%);
     transition: 250ms;
 }
 .mobile-nav {
-    margin-bottom: auto;
+    margin-bottom: 168px;
 
 }
 .mobile-menu-nav {
@@ -1780,18 +1778,19 @@ color: #2E2F42;
 .mobile-menu-item:focus {
     color: #404BBF;
 }
+.mobile-address {
 
-.mobile-nav-adress {
-    display: flex;
-    flex-direction: column;
+
 
 }
 .mobile-adress-menu {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 24px;
 }
-
+.mobile-adress-list {
+  
+}
 .mobile-address {
     margin-bottom: 48px;
 }
@@ -1831,7 +1830,10 @@ color: #2E2F42;
 .mobile-wraper-social-links {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.menu-social-icons {
+      
+   
+}
 .list-social-icons {
     width: 40px;
     height: 40px;
@@ -1861,4 +1863,3 @@ color: #2E2F42;
 
 
   /* ================================= /MOBILE MENU WRAPER ========================================== */
-
