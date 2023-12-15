@@ -418,6 +418,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px)  {
 
 .hero-section {   
     padding: 112px 0;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
    
     
 }
@@ -433,11 +437,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
     }
   }
 
-
-.hero-title {
-    margin-bottom: 48px;    
-   
-}
 
 .hero-button:hover, 
 .hero-button:focus {    
@@ -534,6 +533,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
 
     .specifics {
         padding: 120px 0; 
+        width: 1128px;
+        margin: 0 auto;
      
     }
     .specifics-container {
@@ -710,8 +711,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
             
         }
         
-    
-        
     }
      
     /* ======================================  /TABLET OUR TEAM SECTION   ===================================== */      
@@ -721,18 +720,21 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         .our-team {
             background-color: #F4F4FD; 
             padding: 120px 0;
+        
            
         }
         .our-team-container {
+            width: 1128px;
             margin: 0 auto;
             
         }
          
         .menu-our-team {
             display: flex;
+            flex-wrap: nowrap;
             width: auto;
-            gap: 24px;
-            justify-content: space-between;
+            padding-left: 16px;
+             padding-right: 16px;
            
          
         }
@@ -742,7 +744,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
             background-color: #404bbf;
             
         }
-        
+       
     }
     /* ======================================  /DESKTOP OUR TEAM SECTION   ===================================== */
 
@@ -841,6 +843,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         
        
     }
+    .our-portfolio-list {
+        width:288px;
+     
+    }
 }
 /* ======================================  /MOBILE OUR PORTFOLIO SECTION   ===================================== */
 
@@ -891,6 +897,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         flex-direction: column;        
         align-items: center;
         margin: 0 auto;
+        width: 1128px;
+        
         
     }
  
@@ -1041,6 +1049,7 @@ input::placeholder {
         flex-direction: column;
         align-items: center;
         
+       
     }
    
     .footer-form {
