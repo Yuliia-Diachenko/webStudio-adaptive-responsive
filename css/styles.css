@@ -1145,7 +1145,6 @@ input::placeholder {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
      
            
     }
@@ -1368,6 +1367,8 @@ input:checked +.form-label-checkbox > .form-label-span {
     }
    
 }
+   
+
 /* ==========================================    /MOBILE MODAL WINDOW    ========================================== */
 
 
@@ -1379,7 +1380,7 @@ input:checked +.form-label-checkbox > .form-label-span {
 
  /* ==========================================    MOBILE MENU WRAPER    ========================================== */
 
- @media screen and (max-width: 767px) {
+
 
     .mobile-menu-wraper-container {
      padding: 72px 16px 40px 16px;
@@ -1542,6 +1543,7 @@ input:checked +.form-label-checkbox > .form-label-span {
    .social-links-icons {
        fill:  #f4f4fd;
    }
-   }
+
+
 
   /* ================================= /MOBILE MENU WRAPER ========================================== */
