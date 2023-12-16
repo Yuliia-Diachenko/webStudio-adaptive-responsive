@@ -203,6 +203,7 @@ p {
 @media screen and (min-width:  1158px)  {
     .container {
         max-width: 1440px;
+        padding: 0 15px;
     }
 
     /* ================================  DESKTOP HEDER STYLE  ================================================ */ 
@@ -313,7 +314,6 @@ p {
 /* ==========================================  MOBILE HERO SECTION  ======================================== */
 .hero-section {
    
- 
     background-image: 
     linear-gradient(
     to bottom, 
@@ -321,7 +321,6 @@ p {
     rgba(46, 47, 66, 0.7)),
     url(../images/adaptiv_imeges/Dark-bg_m.jpg);    
     background-size: cover;
-    
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -330,10 +329,10 @@ p {
 .hero-title {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
+    line-height: 1.11;
+    letter-spacing: 0.03em;
  
    
 }
@@ -361,8 +360,7 @@ p {
 }
 @media screen and (max-width: 767px) {
 
-    .hero-section {
-        max-width: 767px;
+    .hero-section {     
         padding: 72px 0;
         
        
@@ -381,7 +379,7 @@ p {
     
     .hero-title {
         margin-bottom: 72px;   
-        width: 288px; 
+        width: 220px; 
        
     }
   
@@ -514,7 +512,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
     width:288px;
 
   } 
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 }
  /* ==================================   /MOBILE SPECIFICS SECTION   =====================================*/
   /* ==================================   TABLET SPECIFICS SECTION   =====================================*/
@@ -534,11 +535,15 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
     justify-content: center;
    
   }
+
 .specifics-list {
-    width: calc((100% - 72px)/2);
+    width: calc((100% - 24px)/2);
     
   }
-
+  .specifics-title {
+    text-align: left;
+       
+}
 }
 
    /* ==================================   /TABLET SPECIFICS SECTION   =====================================*/
@@ -548,7 +553,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
 
     .specifics {
         padding: 120px 0; 
-        width: 1128px;
+        width: 1158px;
         margin: 0 auto;
      
     }
@@ -573,7 +578,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
        
       }
     .specifics-list {
+
         width: calc((100% - 72px)/4);
+        
        
     
       }
@@ -587,7 +594,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         color: #2E2F42;
         font-size: 20px;
         font-weight: 500;
-        text-align:left;
+        
            
     }
 }
@@ -617,7 +624,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
         display: flex;
         flex-direction: column;
         width: 264px;
-        margin: 0 auto;
+
+       
     }
     .our-team-person-container {
         padding: 32px 0;           
@@ -698,7 +706,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
             
         }
      .our-team-block {
-        margin-bottom: 72px;
+        margin-bottom: 72px;        
+        margin: 0 auto 72px auto;
+        
      }   
     .our-team-block:last-child {
        margin-bottom: 0px;
@@ -714,15 +724,12 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
             padding: 96px 0;
            
         }
-          
         .menu-our-team {
             display: flex;
             flex-wrap: wrap;
             column-gap: 24px;
             row-gap: 72px; 
             justify-content: center;
-            width: 596px;
-            margin: 0 auto;
             
         }
         
@@ -906,7 +913,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
 
 /* ======================================  DESKTOP OUR PORTFOLIO SECTION   ===================================== */
 @media screen and (min-width: 1158px) { 
-    
+    .our-portfolio {
+        padding: 120px 0;
+         
+      }
     .container-our-portfolio {
         display: flex;
         flex-direction: column;        
@@ -943,9 +953,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px)  {
     margin: 0 auto;
 
 }
-.footer-container {
-    padding: 96px 0;
-}
+
 .logo-web {
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
@@ -1032,7 +1040,10 @@ input::placeholder {
 
 }
 @media screen and (max-width: 767px) {
- 
+ .footer {
+    padding: 96px 0;
+
+ }
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -1055,7 +1066,7 @@ input::placeholder {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
     }
   
     /* --    footer form  ---  */
@@ -1090,13 +1101,17 @@ input::placeholder {
 /* ================================================  /MOBILE FOOTER  =============================================== */
 /* ================================================  TABLET FOOTER  =============================================== */
 @media screen and (min-width: 768px) {
+    .footer {
+        padding: 98px 0 96px 0;
+    
+     }
+       
     .footer-container {
         margin: 0 auto;
-        width: 584px;
+        max-width: 584px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
+             
        
     }
     .footer-container-logo-text-social-links {
@@ -1134,7 +1149,10 @@ input::placeholder {
 /* ================================================  DESKTOP FOOTER  =============================================== */
    @media screen and (min-width: 1158px) { 
  
-
+    .footer {
+        padding: 100px 0;
+    
+     }
 
    .footer-container-logo-text-social-links {
         min-width: 584px;
@@ -1145,21 +1163,29 @@ input::placeholder {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        max-width: 1158px;
      
            
     }
     .footer-container-logo-text {
-        max-width: 264px;
+        min-width: 264px;
        
     }
     .footer-container-logo-text-social-links {
       
         margin: 0 auto;
        max-width: 1288px;
-       padding: 0 16px;
+      
 
     }   
-
+    .footer-text {
+        margin-right: 120px;
+        font-weight: 400;
+        width: 288px;
+    }
+    .footer-container-social-links {
+        margin-right: 80px;
+    }
    }
 /* ================================================  /DESKTOP FOOTER  =============================================== */
 
@@ -1380,14 +1406,11 @@ input:checked +.form-label-checkbox > .form-label-span {
 
  /* ==========================================    MOBILE MENU WRAPER    ========================================== */
 
-
-
     .mobile-menu-wraper-container {
      padding: 72px 16px 40px 16px;
      display: flex; 
      margin-left: 0;
  
-
    }
    
    .mobile-menu-wraper-btn-close {
@@ -1544,6 +1567,8 @@ input:checked +.form-label-checkbox > .form-label-span {
        fill:  #f4f4fd;
    }
 
-
+.acseent-color {
+    color: #4D5AE5;
+}
 
   /* ================================= /MOBILE MENU WRAPER ========================================== */
