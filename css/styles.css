@@ -329,10 +329,10 @@ p {
 .hero-title {
     color: #FFF;
     text-align: center;
-    font-size: 36px;
+    font-size: 56px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
  
    
 }
@@ -380,6 +380,8 @@ p {
     .hero-title {
         margin-bottom: 72px;   
         width: 220px; 
+        font-size: 36px;
+        letter-spacing: 0.03em;
        
     }
   
